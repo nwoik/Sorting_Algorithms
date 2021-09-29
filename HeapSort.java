@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class HeapSort {
     /**
      * Heap Sort works by building a max heap. 
@@ -6,6 +8,7 @@ public class HeapSort {
      * Worst case: O(nlogn)
      */
     public void heapSort(int my_list[]) {
+        System.out.println("Heap Sort: ");
         int n = my_list.length;
         for (int i = (n/2)-1; i >= 0; i--) { // Final parent in a binary heap is located at (n/2)-1
             heapify(my_list, n, i); // This will bring the largest value in the whole list to the front
@@ -17,6 +20,7 @@ public class HeapSort {
             my_list[i] = temp;
             heapify(my_list, i, 0); // We heapify the list excluding the value we swapped, moving the next biggest value to index 0 by heapifying
         }
+        System.out.println(Arrays.toString(my_list));
     }
 
     private void heapify(int my_list[], int n, int i) { // n is the size of the heap and i is the root

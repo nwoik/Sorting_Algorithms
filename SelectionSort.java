@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class SelectionSort {
     /**
      * Selection sort works by taking a current value and searches the list for the lowest value then swaps their positions
@@ -25,5 +27,6 @@ public class SelectionSort {
                 System.out.println();
             };        
         };
+        System.out.println(Arrays.toString(my_list));
     }
 }

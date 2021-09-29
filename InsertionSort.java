@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class InsertionSort {
     /**
      * Insertion sort works by comparing values in turn.
@@ -23,5 +25,6 @@ public class InsertionSort {
             };
             my_list[position] = current; // this is where u insert the value
         };
+        System.out.println(Arrays.toString(my_list));
     };
 }

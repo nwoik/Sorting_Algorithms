@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class BubbleSort {
     /**
      * Bubble sort works by comparing 2 elements and swapping them if they're in the wrong order.
@@ -24,5 +26,6 @@ public class BubbleSort {
                 };
             };
         };
+        System.out.println(Arrays.toString(my_list));
     };
 };
